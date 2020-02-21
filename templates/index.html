@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="rus">
+<head>
+    <meta charset="UTF-8">
+    <title>Года достижений</title>
+</head>
+<body>
+    <p>Таблица с годами достижений: </p>
+    <table border=1>
+        {% for year in result %}
+            <tr>
+                <th> {{ forloop.counter }} </th>
+                <td> <a href="./{{ year }}">{{ year }} </a> </td>
+            </tr>
+        {% endfor %}
+    </table>
+
+</body>
+</html>
